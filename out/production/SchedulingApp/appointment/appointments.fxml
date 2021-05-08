@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="615.0" prefWidth="987.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appointment.appointmentsController">
+   <children>
+      <TableView fx:id="appointmentTableview" layoutX="28.0" layoutY="92.0" prefHeight="364.0" prefWidth="940.0">
+        <columns>
+          <TableColumn prefWidth="105.20001602172852" text="Appointment Id" />
+          <TableColumn prefWidth="70.60000610351562" text="Title" />
+            <TableColumn prefWidth="87.79997253417969" text="Description" />
+            <TableColumn prefWidth="85.39999389648438" text="Location" />
+            <TableColumn prefWidth="93.0" text="Contact" />
+            <TableColumn prefWidth="78.4000244140625" text="Type" />
+            <TableColumn prefWidth="65.79998779296875" text="Start Date" />
+            <TableColumn prefWidth="68.5999755859375" text="Start Time" />
+            <TableColumn prefWidth="81.199951171875" text="End Date" />
+            <TableColumn prefWidth="72.800048828125" text="End Time" />
+            <TableColumn prefWidth="134.20001220703125" text="Customer Id" />
+        </columns>
+      </TableView>
+      <Button layoutX="414.0" layoutY="509.0" mnemonicParsing="false" text="Modify Appointment" />
+      <Button layoutX="270.0" layoutY="509.0" mnemonicParsing="false" onMouseClicked="#addAppointment" text="Add Appointment" />
+      <Label layoutX="27.0" layoutY="461.0" text="Sort by:" />
+      <RadioButton layoutX="68.0" layoutY="461.0" mnemonicParsing="false" text="Month" />
+      <RadioButton layoutX="135.0" layoutY="461.0" mnemonicParsing="false" text="Week" />
+      <Button layoutX="568.0" layoutY="509.0" mnemonicParsing="false" text="Delete Appointment " />
+      <Button layoutX="414.0" layoutY="561.0" mnemonicParsing="false" onMouseClicked="#dashboardWindow" text="Return to Dashboard" />
+      <Label layoutX="27.0" layoutY="38.0" text="Appointments">
+         <font>
+            <Font name="System Italic" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
