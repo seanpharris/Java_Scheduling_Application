@@ -10,6 +10,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import model.Customers;
 
 import java.io.IOException;
 import java.net.URL;
@@ -17,6 +18,8 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class dashboardController implements Initializable {
+
+    Customers customers;
 
     @FXML
     private void logOut(MouseEvent event) {
@@ -41,9 +44,9 @@ public class dashboardController implements Initializable {
     }
 
     @FXML
-    private void contactsWindow(MouseEvent event){
+    private void customersWindow(MouseEvent event){
         try{
-            FXMLLoader loader=new FXMLLoader(getClass().getResource("../contact/contacts.fxml"));
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("../customerWindows/customersWindow.fxml"));
             Parent root=loader.load();
             Scene scene=new Scene(root);
             Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
@@ -58,7 +61,7 @@ public class dashboardController implements Initializable {
     @FXML
     private void appointmentsWindow(MouseEvent event){
         try{
-            FXMLLoader loader=new FXMLLoader(getClass().getResource("../appointment/appointments.fxml"));
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("../appointmentWindows/appointments.fxml"));
             Parent root=loader.load();
             Scene scene=new Scene(root);
             Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();

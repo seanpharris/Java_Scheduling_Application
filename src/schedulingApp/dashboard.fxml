@@ -13,7 +13,7 @@
             <Font name="System Italic" size="36.0" />
          </font>
       </Label>
-      <PieChart layoutX="58.0" layoutY="243.0" prefHeight="187.0" prefWidth="244.0" />
+      <PieChart layoutX="51.0" layoutY="285.0" prefHeight="187.0" prefWidth="244.0" />
       <Label layoutX="288.0" layoutY="5.0" prefHeight="18.0" prefWidth="49.0" text="Location:" textFill="#00000072" />
       <Label layoutX="487.0" layoutY="5.0" prefHeight="18.0" prefWidth="32.0" text="User:" textFill="#00000073" />
       <TextField editable="false" layoutX="338.0" layoutY="1.0" />
@@ -23,9 +23,14 @@
          </opaqueInsets>
       </TextField>
       <Button layoutX="589.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#logOut" text="Logout" />
-      <Button layoutX="503.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#contactsWindow" prefHeight="26.0" prefWidth="92.0" text="Contacts" />
+      <Button layoutX="503.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#customersWindow" prefHeight="26.0" prefWidth="92.0" text="Customers" />
       <Button layoutX="503.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#appointmentsWindow" text="Appointments" />
       <ListView layoutX="58.0" layoutY="87.0" prefHeight="152.0" prefWidth="318.0" />
       <Label layoutX="58.0" layoutY="65.0" text="Upcoming Appointments" />
+      <Label layoutX="58.0" layoutY="239.0" text="Reports">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
