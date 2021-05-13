@@ -1,4 +1,4 @@
-package schedulingApp;
+package mainWindows;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

@@ -12,7 +12,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception{
 
-        FXMLLoader loader=new FXMLLoader(getClass().getResource("/schedulingApp/logon.fxml"));
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("/mainWindows/logon.fxml"));
         Parent root=loader.load();
         Scene scene=new Scene(root);
         stage.setScene(scene);

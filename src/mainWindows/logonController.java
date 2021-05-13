@@ -1,4 +1,4 @@
-package schedulingApp;
+package mainWindows;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
