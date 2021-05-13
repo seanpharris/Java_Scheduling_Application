@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="512.0" prefWidth="846.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customerWindows.customersController">
+    <TableView fx:id="customerTableview" layoutX="15.0" layoutY="69.0" prefHeight="218.0" prefWidth="810.0">
+      <columns>
+          <TableColumn fx:id="customerIdColumn" prefWidth="75.0" text="Customer Id">
+              <cellValueFactory>
+                  <PropertyValueFactory property="customerId" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="customerNameColumn" prefWidth="75.0" text="Name">
+              <cellValueFactory>
+                  <PropertyValueFactory property="customerName" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="customerAddressColumn" prefWidth="75.0" text="Address">
+              <cellValueFactory>
+                  <PropertyValueFactory property="customerAddress" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="customerPostalCodeColumn" prefWidth="75.0" text="Postal Code">
+              <cellValueFactory>
+                  <PropertyValueFactory property="postalCode" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="customerPhoneColumn" prefWidth="75.0" text="Phone">
+              <cellValueFactory>
+                  <PropertyValueFactory property="phoneNumber" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="createdDateColumn" prefWidth="93.0" text="Created Date">
+              <cellValueFactory>
+                  <PropertyValueFactory property="createdDate" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="createdByColumn" prefWidth="79.0" text="Created By">
+              <cellValueFactory>
+                  <PropertyValueFactory property="createdBy" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="updatedTimeColumn" prefWidth="89.0" text="Updated Time">
+              <cellValueFactory>
+                  <PropertyValueFactory property="lastUpdated" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="updatedByColumn" prefWidth="89.0" text="Updated date">
+              <cellValueFactory>
+                  <PropertyValueFactory property="lastUpdatedBy" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="divisionIdColumn" prefWidth="84.0" text="Division Id">
+              <cellValueFactory>
+                  <PropertyValueFactory property="divisionId" />
+              </cellValueFactory>
+          </TableColumn>
+      </columns>
+    </TableView>
+    <Button layoutX="376.0" layoutY="301.0" mnemonicParsing="false" text="Edit customerWindows" />
+    <Button layoutX="520.0" layoutY="301.0" mnemonicParsing="false" text="Delete customerWindows" />
+    <Button layoutX="37.0" layoutY="288.0" mnemonicParsing="false" text="Search" />
+    <TextField layoutX="89.0" layoutY="288.0" />
+    <Label layoutX="37.0" layoutY="22.0" text="Customers">
+        <font>
+          <Font name="System Italic" size="36.0" />
+        </font>
+    </Label>
+    <Button layoutX="353.0" layoutY="339.0" mnemonicParsing="false" onMouseClicked="#dashboardWindow" text="Return to dashboard" />
+    <Button layoutX="285.0" layoutY="301.0" mnemonicParsing="false" onMouseClicked="#addContact" text="Add Contact" />
+</AnchorPane>
