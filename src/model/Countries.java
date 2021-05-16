@@ -1,9 +1,16 @@
 package model;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.sql.Timestamp;
 
 public class Countries {
+
+    public static ObservableList<Countries> countryList = FXCollections.observableArrayList();
+
     private int countryId;
+
     private String countryName;
 
     public int getCountryId() {
@@ -27,4 +34,18 @@ public class Countries {
         this.countryName = countryName;
     }
 
+    public static Countries findCountryId(int id) {
+        int i = 0;
+        while (i < countryList.size()) {
+            if (id == countryList.get(i).countryId)
+                return countryList.get(i);
+            i++;
+        }
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return this.countryName;
+    }
 }

@@ -3,7 +3,6 @@ package model;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.sql.Time;
 import java.sql.Timestamp;
 
 public class Customers {
@@ -54,11 +53,11 @@ public class Customers {
         this.phoneNumber = phoneNumber;
     }
 
-    public int getDivisionId() {
-        return divisionId;
+    public String getDivisionId() {
+        return this.divisionId;
     }
 
-    public void setDivisionId(int divisionId) {
+    public void setDivisionId(String divisionId) {
         this.divisionId = divisionId;
     }
 
@@ -92,7 +91,8 @@ public class Customers {
         this.lastUpdatedBy = lastUpdatedBy;
     }
 
-    public Customers(int customerId, String customerName, String customerAddress, String postalCode, String phoneNumber, Timestamp createdDate, String createdBy, Timestamp lastUpdated, String lastUpdatedBy, int divisionId) {
+
+    public Customers(int customerId, String customerName, String customerAddress, String postalCode, String phoneNumber, Timestamp createdDate, String createdBy, Timestamp lastUpdated, String lastUpdatedBy, String divisionId) {
         this.customerId = customerId;
         this.customerName = customerName;
         this.customerAddress = customerAddress;
@@ -113,6 +113,6 @@ public class Customers {
     private String createdBy;
     private Timestamp lastUpdated;
     private String lastUpdatedBy;
-    private int divisionId;
+    private String divisionId;
 
 }

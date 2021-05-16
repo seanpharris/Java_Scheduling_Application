@@ -5,6 +5,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import model.Countries;
 import model.Customers;
+import model.FirstLevelDivisons;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -34,7 +35,7 @@ public class DBCustomers {
                 String createdBy = rs.getString("Created_by");
                 Timestamp lastUpdated = rs.getTimestamp("Last_Update");
                 String lastUpdatedBy = rs.getString("Last_Updated_By");
-                int divisionId = rs.getInt("Division_ID");
+                String divisionId = rs.getString("Division_ID");
                 Customers C = new Customers(customerId, customerName, customerAddress, postalCode, phoneNumber, createdDate, createdBy, lastUpdated, lastUpdatedBy, divisionId);
                 customersList.add(C);
             }

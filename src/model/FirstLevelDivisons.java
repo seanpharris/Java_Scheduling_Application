@@ -1,8 +1,38 @@
 package model;
 
+import DBAccess.DBFirstLevelDivisions;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.sql.Timestamp;
 
 public class FirstLevelDivisons {
+
+    ObservableList<FirstLevelDivisons> firstLevelDivisionList = FXCollections.observableArrayList();
+
+    public ObservableList<FirstLevelDivisons> getDivisionByCountry(Countries country) {
+        ObservableList<FirstLevelDivisons> temp = FXCollections.observableArrayList();
+
+        int i = 0;
+        while (i < firstLevelDivisionList.size()) {
+            if (country == firstLevelDivisionList.get(i).getCountry())
+                temp.add(firstLevelDivisionList.get(i));
+            i++;
+        }
+        return temp;
+    }
+    public Countries getCountry() {
+        return Countries.findCountryId(countryId);
+    }
+
+
+
+
+    @Override
+    public String toString() {
+        return this.divisonName;
+    }
+
     private int divisionId;
 
     public int getDivisionId() {
@@ -69,6 +99,7 @@ public class FirstLevelDivisons {
         this.lastUpdated = lastUpdated;
         this.lastUpdatedBy = lastUpdatedBy;
         this.countryId = countryId;
+
     }
 
     private String divisonName;
@@ -77,5 +108,6 @@ public class FirstLevelDivisons {
     private Timestamp lastUpdated;
     private String lastUpdatedBy;
     private int countryId;
+
 
 }

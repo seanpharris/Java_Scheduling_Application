@@ -1,11 +1,12 @@
 
 package DBConnection;
 
+        import javax.management.Query;
         import java.sql.Connection;
         import java.sql.DriverManager;
-        import java.time.Instant;
-        import java.io.IOException;
+        import java.sql.ResultSet;
         import java.sql.SQLException;
+        import java.util.HashMap;
 
 public class DBConnection {
 
@@ -21,7 +22,7 @@ public class DBConnection {
 
     private static final String username = "U07op5";
 
-    private static Connection conn = null;
+    public static Connection conn = null;
 
     public static Connection startConnection() {
         try {

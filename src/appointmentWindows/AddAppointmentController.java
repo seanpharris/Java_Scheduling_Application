@@ -1,4 +1,4 @@
-package customerWindows;
+package appointmentWindows;
 
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-public class addCustomerController implements Initializable {
+public class AddAppointmentController implements Initializable {
 
     public void backToDashboard (MouseEvent event){
         boolean cancel;
@@ -25,7 +25,7 @@ public class addCustomerController implements Initializable {
         alert.setContentText("Click ok to confirm");
         Optional<ButtonType> result=alert.showAndWait();
         if(result.isPresent()&&result.get()==ButtonType.OK) try{
-            FXMLLoader loader=new FXMLLoader(getClass().getResource("/customerWindows/customersWindow.fxml"));
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("/schedulingApp/Dashboard.fxml"));
 
             Parent root=loader.load();
             Scene scene=new Scene(root);
@@ -37,7 +37,6 @@ public class addCustomerController implements Initializable {
             e.printStackTrace();
         }
     }
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
