@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulingApp.DashboardController">
+   <Label layoutX="58.0" layoutY="14.0" prefHeight="54.0" prefWidth="230.0" text="Dashboard">
+      <font>
+         <Font name="System Italic" size="36.0" />
+      </font>
+   </Label>
+   <Label layoutX="1098.0" layoutY="14.0" prefHeight="18.0" prefWidth="54.0" text="Timezone:" textFill="#00000072" />
+   <Button layoutX="1332.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#logOut" text="Logout" />
+   <Button layoutX="1294.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#customersWindow" prefHeight="26.0" prefWidth="92.0" text="Customers" />
+   <Button layoutX="1294.0" layoutY="134.0" mnemonicParsing="false" onMouseClicked="#appointmentsWindow" text="Appointments" />
+   <Label layoutX="58.0" layoutY="65.0" text="Upcoming Appointments" />
+   <Label layoutX="58.0" layoutY="239.0" text="Reports">
+      <font>
+         <Font name="System Italic" size="24.0" />
+      </font>
+   </Label>
+   <TableView fx:id="appointmentTableview" layoutX="16.0" layoutY="87.0" prefHeight="144.0" prefWidth="374.0">
+      <columns>
+         <TableColumn fx:id="appointmentIdColumn" prefWidth="118.0" text="Appointment Id">
+            <cellValueFactory>
+               <PropertyValueFactory property="appointmentId" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn fx:id="startTimeColumn" editable="false" prefWidth="142.0" sortType="DESCENDING" sortable="false" text="Time">
+            <cellValueFactory>
+               <PropertyValueFactory property="start" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn fx:id="locationColumn" prefWidth="116.0" text="Location">
+            <cellValueFactory>
+               <PropertyValueFactory property="location" />
+            </cellValueFactory>
+         </TableColumn>
+      </columns>
+   </TableView>
+   <Label fx:id="locationTxt" layoutX="1170.0" layoutY="14.0" text="Label" textFill="#00000073" />
+   <ScrollPane layoutX="25.0" layoutY="298.0" prefHeight="223.0" prefWidth="430.0">
+      <content>
+         <Label fx:id="typeMonth" text="typeAndMonth" />
+      </content>
+   </ScrollPane>
+   <Label layoutX="25.0" layoutY="274.0" text="Total number of customer appointments by Type and Month" />
+   <ScrollPane layoutX="25.0" layoutY="559.0" prefHeight="223.0" prefWidth="1217.0">
+      <content>
+         <Label fx:id="schedLabel" text="Schedule for each contact" />
+      </content>
+   </ScrollPane>
+   <ScrollPane layoutX="603.0" layoutY="298.0" prefHeight="223.0" prefWidth="636.0">
+      <content>
+         <Label fx:id="thisLabel" text="Label" />
+      </content>
+   </ScrollPane>
+   <Label layoutX="25.0" layoutY="542.0" text="Schedule for each contact" />
+   <Label layoutX="603.0" layoutY="274.0" text="Total number of customer appointments per Day by Title" />
+   <Label fx:id="timeLabel" layoutX="941.0" layoutY="15.0" text="Label" textFill="#00000073" />
+   <Label layoutX="890.0" layoutY="15.0" text="Time:" textFill="#00000073" />
+</AnchorPane>

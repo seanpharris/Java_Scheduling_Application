@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="454.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <GridPane layoutX="56.0" layoutY="95.0" prefHeight="319.0" prefWidth="373.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints />
+        </rowConstraints>
+        <Label text="Customer Id:" />
+        <Label text="Customer name:" GridPane.rowIndex="1" />
+        <Label text="Address:" GridPane.rowIndex="2" />
+        <Label text="Postal Code:" GridPane.rowIndex="3" />
+        <Label text="Phone:" GridPane.rowIndex="4" />
+        <Label text="Created date:" GridPane.rowIndex="5" />
+        <Label text="Created by:" GridPane.rowIndex="6" />
+        <Label text="Last updated:" GridPane.rowIndex="7" />
+        <Label text="Last updated by:" GridPane.rowIndex="8" />
+        <TextField fx:id="custIdTxt" editable="false" GridPane.columnIndex="1" />
+        <TextField fx:id="custNameTxt" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="custAddressTxt" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField fx:id="custPostalCodeTxt" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="custPhoneTxt" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <TextField fx:id="createDate" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <TextField fx:id="createBy" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <TextField fx:id="lastUpdate" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <TextField fx:id="lastUpdateBy" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        <Label text="Country" GridPane.rowIndex="9" />
+        <ChoiceBox fx:id="country" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+        <ChoiceBox fx:id="stateProvince" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+        <Label text="State/Province" GridPane.rowIndex="10" />
+    </GridPane>
+    <Button layoutX="525.0" layoutY="367.0" mnemonicParsing="false" onMouseClicked="#backToDashboard" text="Cancel" />
+    <Button layoutX="449.0" layoutY="367.0" mnemonicParsing="false" onMouseClicked="#saveCustomer" prefHeight="26.0" prefWidth="48.0" text="Save" />
+    <Label layoutX="56.0" layoutY="41.0" text="Modify Contact">
+        <font>
+          <Font name="System Italic" size="36.0" />
+        </font>
+    </Label>
+</AnchorPane>
