@@ -1,5 +1,5 @@
 # Scheduling Application
-## Application feautures customer creation/modifying and appoitnment scheduling. The data is saved to a MySQL database through JDBC.
+## Application feautures customer creation/modifying and appointment scheduling. The data is saved to a MySQL database using JDBC.
 ### Java, JavaFX, SQL
 
 
