@@ -17,3 +17,8 @@ App Version: 5
 Date: 5/30/2021  
 IDE: IntelliJ 2021.1 JDK 11.0.2 javafx-sdk-11.0.2  
 mysql:mysql-connector-java:8.0.22  
+
+## TODO:
+1. Database rework
+2. File structure rework
+3. DRY Refactor
