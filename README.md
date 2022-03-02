@@ -3,7 +3,7 @@
 ### Java, JavaFX, SQL
 
 Getting started:  
-  - On logon, you will be prompted with appointments within 15 minutes and then will proceed to the dashboard.  
+  - After login, you will be prompted with appointments within 15 minutes and then will proceed to the dashboard.  
   - At the dashboard there will be multiple buttons to navigate the application. 
     * To add/edit a customers information, go to the customers page.  
     * To add/edit a appointments information, go to the appointments page. 
